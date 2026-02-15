@@ -3,7 +3,7 @@ services:
     name: schedule-bot
     runtime: python
     plan: starter
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python app/main.py
     envVars:
       - key: BOT_TOKEN
