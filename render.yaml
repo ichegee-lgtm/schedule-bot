@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: schedule-bot
+    runtime: python
+    plan: starter
+    buildCommand: ""
+    startCommand: python app/main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
